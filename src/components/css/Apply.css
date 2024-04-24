@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+.Apply{
+    background-image: url('../pic/Apply/A1.jpg');
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text-Apply{
+    font-family: "Hind", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: large;
+    color: whitesmoke;
+    background-color: brown;
+    width: 40%;
+    
+}
+@media screen and (max-width:1025px) {
+    .text-Apply{
+        font-weight: 500;
+        font-size: small;
+        color: whitesmoke;
+        background-color: brown;
+        width: 100%;
+        
+    }
+}
+

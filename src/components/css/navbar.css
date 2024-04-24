@@ -1,0 +1,37 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.book1-btn{
+    font-family: "Hind", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: large;
+}
+.nav-link{
+    font-family: "Hind", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: large;
+    color:#69727f;
+}
+
+@media screen and (max-width:768px) {
+  
+    .book_btn{
+        display: none;
+    }
+
+
+}
+@media screen and (max-width:425px) {
+    .header{
+       display: none;
+
+    }
+
+}

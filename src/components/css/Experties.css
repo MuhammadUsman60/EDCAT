@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+.text-e1{
+    font-family: "Hind", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    color: brown;
+}
+.text-e2{
+    font-family: "Hind", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    color: brown;
+}
+.text-ep1{
+    font-family: "Hind", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#69727f;
+    
+}
+.img-e1{
+    width: 100px;
+}
+@media screen and (max-width:1025px) {
+    .text-e1{
+
+        font-weight: 700;
+        font-size: xx-large;
+    }
+    .text-e2{
+        font-weight: 500;
+        font-size: large;
+    }
+    .text-ep1{
+        font-weight: 300;
+        font-size: small;
+        
+    }
+    .img-e1{
+        width: 80px;
+    }
+}
+@keyframes move {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animated-caption1 {
+    animation-name: move;
+    animation-duration: 3s;
+    animation-delay: 2s;
+  }

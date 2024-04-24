@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+.contactHeader{
+    background-color: brown;
+    height: 300px;
+}
+.textcolor{
+    font-family: "Hind", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 50px;
+}
+.textp1c{
+    font-family: "Hind", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    color:#69727f;
+}
+.texth1c{
+    font-family: "Hind", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+    color: brown;
+}
+
+@media screen and (max-width:904px){
+    .textp1c{
+
+        font-size: small;
+
+    }
+    .texth1c{
+     
+        font-size: 20px;
+     
+    }
+    .textcolor{
+        font-size: 40px;
+    }
+}
+
+@keyframes move {
+    0%{
+        opacity: 0;
+        /* transform: translateY(-50px); */
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(50px);
+    }
+}
+
+.animated-2 {
+    animation-name: move;
+    animation-duration: 3s;
+    animation-delay: 1s;
+  }
+  @keyframes animated-2 {
+    0%{
+        opacity: 0;
+        /* transform: translateY(-50px); */
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(-50px);
+    }
+}
+
+.animated-21 {
+    animation-name: animated-2;
+    animation-duration: 3s;
+    animation-delay: 1s;
+  }

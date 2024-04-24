@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+.footer{
+    background-color: #29292b;
+    font-family: "Hind", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: large;
+}
+.footer1{
+    color: #99A9B5FF;
+}
+.footer2{
+    height: 70px;
+    background-color: #000000;
+}
+
+.logo{
+    width: 188px;
+}
+@media screen and (max-width:1025px) {
+    .para{
+        font-size: small;
+    }
+    .footer{
+        background-color: #29292b;
+        font-family: "Hind", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: small;
+    }
+    .logo{
+        width: 130px;
+    }
+}
+
+@media screen and (max-width:764px) {
+    .para{
+        font-size: x-small;
+    }
+    .footer{
+        background-color: #29292b;
+        font-family: "Hind", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: small;
+    }
+    .logo{
+        display: none;
+    }
+}

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+.text1{
+    font-family: "Hind", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: xx-large;
+}
+.text2{
+    font-family: "Hind", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    color:#69727f;
+}
+.text3{
+    font-family: "Hind", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: xx-large;
+}
+@media screen and (max-width:1025px) {
+    .text1{
+       
+        font-weight: 900;
+     
+        font-size: medium;
+    }
+    .text3{
+        font-weight: 900;  
+        font-size: medium;
+    }
+    .text2{
+        font-weight: 300;
+        font-size: small;
+    }
+}
