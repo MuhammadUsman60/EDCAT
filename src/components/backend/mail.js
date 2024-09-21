@@ -36,7 +36,7 @@ const sendEmail = expressAsyncHandler(async (req, res) => {
       from: process.env.SMTP_MAIL,
       to: process.env.SMTP_MAIL_TO,
       subject: `"Contact Form Submission:"${email}`, // You might want to format the subject better
-      text: `${name} \n ${email} \n ${message}`, // Specify the email content
+      text: `Name is: ${name} \n Email:  ${email} \n Mressage: \n ${message}`, // Specify the email content
     };
 
     await transporter.sendMail(mailOptions);

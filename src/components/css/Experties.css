@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
 .text-e1{
     font-family: "Hind", sans-serif;
-    font-weight: 700;
+ font-weight: 900;
     font-style: normal;
-    font-size: 50px;
-    color: brown;
+ 
+    color: #ed1b24;
 }
 .text-e2{
     font-family: "Hind", sans-serif;
-    font-weight: 600;
+ 
     font-style: normal;
-    font-size: 30px;
-    color: brown;
+
+    color: #ed1b24;
 }
 .text-ep1{
     font-family: "Hind", sans-serif;
@@ -21,27 +21,30 @@
     
 }
 .img-e1{
-    width: 100px;
+    width: 100%;
+    height: 153%;
+}
+.cardExperties{
+    width: 100%;
+  
 }
 @media screen and (max-width:1025px) {
-    .text-e1{
-
-        font-weight: 700;
-        font-size: xx-large;
-    }
-    .text-e2{
-        font-weight: 500;
-        font-size: large;
-    }
     .text-ep1{
         font-weight: 300;
         font-size: small;
         
     }
-    .img-e1{
+    /* .img-e1{
         width: 80px;
+    } */
+}
+@media screen and (max-width:767px) {
+    .cardExperties{
+        width: 97%;
+        padding-left: 45px;
     }
 }
+
 @keyframes move {
     0% {
       opacity: 0;

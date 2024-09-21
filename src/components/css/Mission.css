@@ -1,0 +1,29 @@
+/* .AboutBg{
+    background-image: url('../pic/About/aboutBackgound.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+} */
+.MissionPic{
+    width: 17%;
+
+}
+.KeyValueh1{
+    font-size: larger;
+    color: #ed1b24;
+}
+@media screen and (max-width:764px) {
+    .MissionPic{
+        display: none;
+    }
+    .keyimg{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:350px) {
+ .imgApproach{
+    width: 100%;
+ }
+    
+}

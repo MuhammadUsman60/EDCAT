@@ -1,31 +1,57 @@
+
 import { useEffect } from "react";
 import React from "react";
-import '../css/why.css'
-import '../css/home.css'
+import "../css/why.css";
+import "../css/home.css";
+import whyimg1 from '../pic/About/i.jpg';
+import whyimg2 from '../pic/About/o.jpg';
+import whyimg3 from '../pic/About/r.jpg';
 
 export default function Why() {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show');
-            } else {
-                entry.target.classList.remove('show');
-            }
-        });
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show");
+        }
+      });
     });
 
-    const hiddenElements = document.querySelectorAll('.hidden');
+    const hiddenElements = document.querySelectorAll(".hidden");
     hiddenElements.forEach((el) => observer.observe(el));
 
     // Cleanup function to disconnect the observer when component unmounts
     return () => {
-        hiddenElements.forEach((el) => observer.unobserve(el));
-        observer.disconnect();
+      hiddenElements.forEach((el) => observer.unobserve(el));
+      observer.disconnect();
     };
-}, []);
+  }, []);
+
+  const Exp = [
+    {
+      Headers: "OIL & GAS & POWER",
+      Description:
+        "<ul><li>Static & Vibrating Equipment Foundations</li><li>Pipe racks/Pipe Bridges</li><li>Process structures like Cooling Towers, Powerhouse </li><li>Equipment supporting steel/concrete structures</li><li>Chimney/Stacks foundation</li><li>Pits, Pond Dike wall</li><li>Steel Tank Roof structure & Foundations</li></ul>",
+      img: whyimg1,
+    },
+    {
+      Headers: "INDUSTRIAL",
+      Description:
+        "<ul><li>Industrial Sheds</li><li>Process Buildings</li><li>Conveyor System</li></ul>",
+      img: whyimg2,
+    },
+    {
+      Headers: "RESIDENTIAL",
+      Description:
+        "<ul><li>COST ESTIMATION</li><li>BOQ/MATERIAL TAKE-OFF</li></ul>",
+      img: whyimg3,
+    },
+  ];
+
   return (
-    <div className="p-5 hidden">
+    <div className="p-5">
       <h1 className="texth1">WHY EDCAT</h1>
       <p className="textp1">
         In a market where material escalation and long lead items significantly
@@ -39,27 +65,31 @@ export default function Why() {
         leverage their structural engineering expertise, allowing for concurrent
         engineering alongside design and prior to final trade partner selection.
       </p>
-      <h2 className="texth1">Key Stages of Our Process Include:</h2>
-      <p className="textp1">
-        <span className="textp1h4">Target Value Budgets:</span><br/>We understand that the initial selection of
-        systems is pivotal yet often made with limited information. In response,
-        we focus on providing comprehensive data through BIM quantities and
-        material assessments using Revit and Tekla software. This enables more
-        informed decisions in system selection, contributing to accurate
-        feedback for project optimization.<br/><span className="textp1h4">Pull Planning:</span><br/>Defining critical
-        milestones and construction requirements is essential for project
-        success. Axiom ensures alignment with the design team, emphasizing tasks
-        that drive project progression towards pre-construction and construction
-        milestones.<br/> <span className="textp1h4">Early Material Orders and Trade Partner Selection:</span> <br/>Selecting
-        trade partners to expedite long lead items is crucial in today's market.
-        Our Integrated Supply Chain (ISC) process facilitates commitments from
-        early trade partners, securing material orders while safeguarding
-        against costly change orders for owners and Design Builders. <br/><span className="textp1h4">Steel
-        Turnkey Solutions:</span><br/>Evolve Steel leverages Tekla EPM for estimating,
-        procurement, project management, document control, and fabrication and
-        erection tracking, providing comprehensive solutions for steel-related
-        projects.
-      </p>
+      {Exp.map((exp, key) => (
+        <div key={key}>
+          {key % 2 === 0? (
+            <div className="row">
+              <div className="col-6">
+                <h1 className="wh1">{exp.Headers}</h1>
+                <div className="whyp1" dangerouslySetInnerHTML={{ __html: exp.Description }} />
+              </div>
+              <div className="col-6">
+                <img src={exp.img} alt={exp.Headers} style={{width:'90%',height:'90%'}} className="rounded rounded-5" />
+              </div>
+            </div>
+          ) : (
+            <div className="row">
+              <div className="col-6">
+                <img src={exp.img} alt={exp.Headers} style={{width:'90%',height:'90%'}} className="rounded rounded-5" />
+              </div>
+              <div className="col-6">
+                <h1 className="wh1">{exp.Headers}</h1>
+                <div className="whyp1" dangerouslySetInnerHTML={{ __html: exp.Description }} />
+              </div>
+            </div>
+          )}
+        </div>
+      ))}
     </div>
   );
 }

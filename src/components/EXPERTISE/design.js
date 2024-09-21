@@ -1,6 +1,7 @@
 import React from "react";
+import logo from "../pic/logo.png"; // Assuming the image path is correct
 
-export default function design() {
+export default function Design() { // Changed component name to start with a capital letter
   return (
     <div>
       <div>
@@ -9,7 +10,7 @@ export default function design() {
           Transparency, communication, and collaboration are all key to saving
           money for a successful project from beginning to end. For every
           project, Evolve is committed to those values and are all part of
-          Evolve’s Design- Assist process. The Design Assist approach encourages
+          Evolve’s Design-Assist process. The Design Assist approach encourages
           Evolve to clearly communicate and collaborate each step of the project
           with all those involved. Evolve’s co-owner is also the owner of Axiom
           Engineering, a 10+ year, successful, structural engineer firm also
@@ -21,7 +22,7 @@ export default function design() {
         </p>
       </div>
       <div>
-        <img src="../pic/logo.png"/>
+        <img src={logo} alt="Evolve logo" /> {/* Use imported logo */}
       </div>
     </div>
   );

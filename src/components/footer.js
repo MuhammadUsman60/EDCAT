@@ -1,11 +1,17 @@
 import React from "react";
 import "./css/footer.css";
-import Logo from "./pic/logo.png";
+import Logo from "./pic/1x/LOGO.png";
 import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineMail } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
 import { Link } from "react-router-dom";
 export default function footer() {
+  const scrollToTop = ()=>{
+    window.scrollTo({
+      top:0,
+      behavior:'smooth',
+    })
+  }
   return (
     <div className="footer">
       <div
@@ -17,35 +23,35 @@ export default function footer() {
           <img src={Logo} className="logo" />
         </div>
         {/* Information */}
-        <div className="mt-auto mb-auto col-lg-3 col-md-4 col-sm-12">
+        <div className="mt-auto mb-auto col-lg-5 col-md-4 col-sm-12">
           <div className="d-flex p-2">
             <FiPhoneCall className="me-2" style={{ fontSize: "25px" }} />
-            <p>Phone: (347) 732-5294</p>
+            <p>Phone: +1 (406) 316-0244</p>
           </div>
           <div className="d-flex p-2">
             <MdOutlineMail className="me-2" style={{ fontSize: "25px" }} />
-            <p>Email: info@evolvesteel.com</p>
+            <p>Email: info@engdcat.com</p>
           </div>
           <div className="d-flex p-2">
             <CiLocationOn className="me-2" style={{ fontSize: "30px" }} />
-            <p>Address: 1117 E PLAZA DRIVE SUITE A EAGLE, ID 83616</p>
+            <p>Address: 1001 S MAIN ST ST STE 500 KALISPELL, MT 59901</p>
           </div>
         </div>
         {/* navbar icon */}
         <div className="mt-auto mb-auto  col-lg-4 col-md-4 col-sm-12 textul">
           <ul style={{ listStyle: "none", textDecoration:"none" }}>
-            <Link to={"/"} className="text-decoration-none" style={{ color:"#99A9B5FF"}}>
+            <Link to={"/"} className="text-decoration-none" style={{ color:"#99A9B5FF"}} onClick={scrollToTop}>
               <li className="p-2  border border-secondary border-2 border-end-0 border-start-0">
                 Home
               </li>
             </Link>
-            <Link to={"/about"} className="text-decoration-none" style={{ color:"#99A9B5FF"}}>
+            <Link to={"/about"} className="text-decoration-none" style={{ color:"#99A9B5FF"}} onClick={scrollToTop}>
               <li className="p-2 border border-secondary border-2 border-end-0 border-start-0 border-top-0">
                 About
               </li>
             </Link>
             <Link to={"/service"} className="text-decoration-none" style={{ color:"#99A9B5FF"}}>
-              <li className="p-2 border border-secondary border-2 border-end-0 border-start-0 border-top-0">
+              <li className="p-2 border border-secondary border-2 border-end-0 border-start-0 border-top-0" onClick={scrollToTop}>
                 Service
               </li>
             </Link>
@@ -66,7 +72,7 @@ export default function footer() {
               </li>
             </Link> */}
             <Link to={"/contact"} className="text-decoration-none" style={{ color:"#99A9B5FF"}}>
-              <li className="p-2 border border-secondary border-2 border-end-0 border-start-0 border-top-0">
+              <li className="p-2 border border-secondary border-2 border-end-0 border-start-0 border-top-0" onClick={scrollToTop}>
                 Contact us
               </li>
             </Link>
@@ -78,7 +84,7 @@ export default function footer() {
       <div className="footer2">
         <div style={{ display: "flex" }} className="para">
           <span style={{ color: "#99a9b5" }} className="mt-4 mb-auto ms-3">
-            © 2022 Evolve Steel. All Rights Reserved.
+            ©2024 Engineering Design Consultancy and Technology LLC. All Rights Reserved.
           </span>
         </div>
       </div>

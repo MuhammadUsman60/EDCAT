@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
 .text-3xl{
     font-family: "Hind", sans-serif;
-    font-weight: 700;
+  font-weight: 900;
     font-style: normal;
     font-size: 200%;
+    color: #ed1b24;
 }
 .text-2xl{
     font-family: "Hind", sans-serif;
     font-weight: 700;
-    font-style: normal;
-    font-size: x-large;
+   
+
 }
 .img1{
     font-size: 135px;
@@ -18,14 +19,8 @@
     background-color: #efefef;
 }
 @media screen and (max-width:1035px) {
-    .text-3xl{
-        font-weight: 700;
-        font-size: 140%;
-    }
-    .text-2xl{
-        font-weight: 700;
-        font-size: small;
-    }
+  
+ 
     .img1{
         font-size: 60px;
     }

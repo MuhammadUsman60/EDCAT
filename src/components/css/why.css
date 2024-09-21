@@ -4,7 +4,7 @@
     font-weight: 500;
     font-style: normal;
     font-size: xx-large;
-    color: brown;
+    color: #ed1b24;
 }
 .textp1{
     font-family: "Hind", sans-serif;
@@ -19,6 +19,19 @@
     font-style: normal;
     font-size: medium;
     color:#69727f;
+}
+.wh1{
+    font-family: "Hind", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: xx-large;
+    color: #ed1b24;
+}
+.whyp1{
+    font-family: "Hind", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: large;
 }
 @media screen and (max-width:800px) {
     .texth1{

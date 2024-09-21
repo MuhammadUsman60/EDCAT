@@ -9,9 +9,8 @@
   }
   .child {
   
-    width: 100%;
-    /* height: 70%; */
     text-align:center;
+    height: 85vh;
   }
   .para1{
     font-family: "Hind", sans-serif;
@@ -19,64 +18,30 @@
     font-style: normal;
     font-size: large;
     color: whitesmoke;
-    height: 60%;
+    height: 53%;
+    /* background-color: black; */
+ 
   }
-  .h1{
+  .h1h{
+    font-family: "Hind", sans-serif;
     font-weight: 900;
-    color: brown;
+    color: whitesmoke;
+    
   }
   .h3{
     font-size: 800;
   }
-  @keyframes mymove {
-    0% {
-      opacity: 0;
-      transform: translateX(-50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .animated-caption {
-    animation-name: mymove;
-    animation-duration: 3s;
-    animation-delay: 0.5s;
-  }
-  .typed {
-    /* overflow: hidden;
-    white-space: nowrap;
-    width: 0;
-    animation: typing 2.2s steps(30, end) forwards; */
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid brown;
-    white-space: nowrap;
-    margin: 0 auto; 
-    letter-spacing: .15em; 
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-  }
-  
-  /* @keyframes typing {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: 100%; 
-    }
-  } */
-  
+ 
+  @media screen and (max-width:768px)  {
+    .h1{
 
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+      font-weight: 500;
+      font-size: small;
+    }
+    .homehearderp{
+      font-size: xx-small;
+    }
+    .child {
+      height: 60vh;
+    }
   }
-  
-  
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-   
-  }
-  

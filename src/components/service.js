@@ -1,14 +1,18 @@
 import React from 'react';
+import AboutHeader from './About/AboutHeader';
 
-import AboutHeader from './About/AboutHeader.js';
-import Why from './About/why.js';
-import Experties from './home/Expertise.js'
-export default function Service() {
+import CoreSeriver from './About/coreSeriver'; // Corrected component name
+import Service from './About/sevice'; // Assuming this is another component related to services
+import Expertise from './home/Expertise'; // Corrected import naming convention
+
+export default function service() {
   return (
     <div>
       <AboutHeader />
-      <Why />
-      <Experties />
+      <Service />
+      <CoreSeriver /> 
+
+      
     </div>
-  )
+  );
 }

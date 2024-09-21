@@ -1,102 +1,66 @@
 import React from "react";
-import '../css/why.css'
+import "../css/why.css";
 import { useEffect } from "react";
-import '../css/home.css'
+import "../css/home.css";
 export default function AboutText() {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show');
-            } else {
-                entry.target.classList.remove('show');
-            }
-        });
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show");
+        }
+      });
     });
 
-    const hiddenElements = document.querySelectorAll('.hidden');
+    const hiddenElements = document.querySelectorAll(".hidden");
     hiddenElements.forEach((el) => observer.observe(el));
 
     // Cleanup function to disconnect the observer when component unmounts
     return () => {
-        hiddenElements.forEach((el) => observer.unobserve(el));
-        observer.disconnect();
+      hiddenElements.forEach((el) => observer.unobserve(el));
+      observer.disconnect();
     };
-}, []);
+  }, []);
   return (
-    <div className="p-5 hidden">
-      <h1 className="texth1">About Us</h1>
-      <p className="textp1">
-        At Engineering Design Consultant And Technology, we are dedicated to
-        providing comprehensive and integrated engineering services to projects
-        within the Industrial and Infrastructure sectors. With a capacity of
-        around 10,000 engineering man-hours per year, coupled with
-        state-of-the-art IT tools, we deliver excellence through a
-        multidisciplinary team of approximately 25 engineers, designers, CADD
-        (3D & 2D) specialists, and engineering management experts.
+    <div className="p-5">
+      <h1 className="texth1 ps-2 pt-4">Who We Are</h1>
+      <p className="textp1 p-2">
+        EDCAT LLC, a versatile engineering services company, brings cutting-edge
+        engineering solutions to the construction industry. Derived from
+        advanced engineering services, our name EDCAT reflects our commitment to
+        pushing the boundaries of innovation and expertise.
       </p>
-      <h2 className="texth1">Civil/Structural Design Expertise</h2>
-      <p className="textp1">
-        Our expertise spans across various areas in Civil/Structural
-        Engineering, focusing particularly on:
+      <p className="textp1 p-2">
+        At EDCAT, we have honed our expertise and gained a multidisciplinary
+        perspective through hands-on experience, serving a diverse clientele in
+        the AEC industry. Engineers, contractors, fabricators, and facility
+        managers rely on us to adapt to their ever-evolving needs.
       </p>
-      <h4 className="textp1h4">Basic Engineering</h4>
-      <ul className="textp1">
-        <li>Conceptual design of structure drawings</li>
-        <li>
-          Design and structural drawing preparation of Steel & concrete
-          structure, Pipe Racks, Steel Sheds & Table Top Structures
-        </li>
-        <li>
-          RFQs for Topographical Survey, Geotechnical Investigations & PEB
-        </li>
-        <li>Bid support</li>
-      </ul>
-      <h4 className="textp1h4">Detailed Engineering</h4>
-      <ul className="textp1">
-        <li>Steel and Concrete Structures</li>
-        <li>Shelters and Sheds</li>
-        <li>Pipe Racks</li>
-        <li>Equipment Supporting Structures</li>
-        <li>Platforms & Walkways</li>
-        <li>Pipe Support</li>
-        <li>Bridges</li>
-        <li>Culverts</li>
-        <li>Industrial and Process Buildings Structural Design</li>
-        <li>
-          Equipment Foundations including Pile foundations, Tank Foundations
-        </li>
-        <li>Compressor and Turbine Foundation</li>
-        <li>Underground Tanks</li>
-        <li>BOQ/MTO</li>
-        <li>Plant Roads</li>
-        <li>Steel structure shop drawings</li>
-      </ul>
-      <h4 className="textp1h4">Pre-Qualification Documents</h4>
-      <p className="textp1">
-        Our commitment to quality and reliability is evident in our
-        pre-qualification documents, ensuring that our clients can trust in our
-        capabilities and expertise.
+      <p className="textp1 p-2">
+        Our team is made up of highly skilled professionals dedicated to
+        providing exceptional services and solutions to our valued clients
+        across various sectors. We maintain a humble approach, always looking
+        for opportunities to learn and improve. Our unwavering passion for
+        engineering and relentless pursuit of excellence drive us to continually
+        push boundaries while understanding and meeting each client's unique
+        requirements.
       </p>
-      <h4 className="textp1h4">Software Details</h4>
-      <p className="textp1">
-        We pride ourselves on utilizing cutting-edge engineering and office
-        software to enhance our efficiency and accuracy. Our software library
-        includes:
+      <p className="textp1 p-2">
+        We prioritize individual clients by placing them at the forefront of our
+        sales and project management processes. Our engineering processes and
+        frameworks have been meticulously defined and streamlined to uphold the
+        highest quality standards. Our team of experts from diverse domains
+        collaborate closely, customizing and optimizing techniques to meet the
+        specific expectations of each client.
       </p>
-      <h4 className="textp1h4">Structural Design Software:</h4>
-      <ul className="textp1">
-        <li>Autodesk AutoCAD</li>
-        <li>TEKLA Structures</li>
-        <li>STAAD PRO</li>
-        <li>MAT 3D</li>
-        <li>FOUNDATION 3D</li>
-        <li>ETABS</li>
-        <li>STAAD Foundation</li>
-        <li>PLANSWIFT, BLUE BEAM & EXCEL (for BOQ/MTO)</li>
-      </ul>
-      <p className="textp1">With these tools at our disposal, we strive to deliver exceptional results, meeting the diverse needs and challenges of our clients' projects.</p>
-      <p className="textp1">At Engineering Design Consultant And Technology, we are committed to excellence, innovation, and client satisfaction. Let us be your partner in engineering success.</p>
+      <p className="textp1 p-2">
+        Discover the EDCAT difference and elevate your projects to a new
+        standard of engineering excellence. Reach out to us today to begin a
+        journey of innovation, collaboration, and outstanding results.
+      </p>
+      
     </div>
   );
 }

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
 .contactHeader{
-    background-color: brown;
+    background-color: #ed1b24;
     height: 300px;
 }
 .textcolor{
@@ -21,7 +21,7 @@
     font-weight: 500;
     font-style: normal;
     font-size: 50px;
-    color: brown;
+    color: #ed1b24;
 }
 
 @media screen and (max-width:904px){

@@ -17,6 +17,7 @@
     font-weight: 600;
     font-style: normal;
     font-size: xx-large;
+    color:#69727f;
 }
 @media screen and (max-width:1025px) {
     .text1{

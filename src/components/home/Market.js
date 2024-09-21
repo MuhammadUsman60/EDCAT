@@ -4,10 +4,10 @@ import { GiSpookyHouse } from "react-icons/gi";
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 import { RiRoadMapFill } from "react-icons/ri";
 import '../css/Market.css';
-import img1 from '../pic/Key market/k1.png';
-import img2 from '../pic/Key market/k2.png';
-import img3 from '../pic/Key market/k3.png';
-import img4 from '../pic/Key market/k4.png';
+import Industrial from '../pic/Key market/k1.png';
+import Commercial from '../pic/Key market/k2.png';
+import Petrochemicals from '../pic/Key market/k3.png';
+import Residential from '../pic/Key market/k4.png';
 import '../css/home.css';
 
 export default function Market() {
@@ -34,28 +34,28 @@ export default function Market() {
 
     const Markets = [{
         name: "Industrial",
-        img: img1
+        img: Industrial
     }, {
         name: "Commercial",
-        img: img2
+        img: Commercial
     }, {
-        name: "Infrastructure",
-        img: img3
+        name: "Oil & Gass / Petrochemicals",
+        img: Petrochemicals
     }, {
         name: "Residential",
-        img: img4
+        img: Residential
     }];
 
     return (
         <div className='body p-5'>
-            <h1 className="text-3xl d-flex justify-content-center">KEY MARKETS</h1>
+            <h2 className="text-3xl d-flex justify-content-center">KEY MARKETS</h2>
             <div className='row p-1' style={{ width: '100%' }}>
                 {Markets.map((market, index) => (
-                    <div key={index} className='col hidden'>
-                        <div className='img1 d-flex justify-content-center mt-4' style={{height: '60%'}}>
-                            <img src={market.img} alt={market.name} style={{width:'60%'}} /> {/* Using img tag */}
+                    <div key={index} className='col'>
+                        <div className='img1 d-flex justify-content-center mt-4'>
+                            <img src={market.img} alt={market.name} style={{width:'40%'}} /> {/* Using img tag */}
                         </div>
-                        <h2 className='text-2xl d-flex justify-content-center mt-3'>{market.name}</h2>
+                        <h4 className='text-2xl d-flex justify-content-center mt-3'>{market.name}</h4>
                     </div>
                 ))}
             </div>
